@@ -1,48 +1,60 @@
 \version "2.20.0" 
 
 \header{
-  title = "Quintiplets by 6 in 3/4"
-  subtitle = "notes grouping = '100101'"
-  subsubtitle = "offset = 0, fill = notes"
-  composer = "Dmitriy Denisov"  
+    title = "Triplets by 5 in 4/4"
+    subtitle = "notes grouping = '10100'"
+    subsubtitle = "offset = 0"
+    composer = "Dmitriy Denisov"  
 }
 
- \relative c'{
-    \set fontSize = 1
-    \clef percussion 
-    \stemUp
-    
-\time 3/4
+\layout {
+    indent = #0
+}
+
+\markup {
+    Note filling
+}
+
+\relative c'{
+\set fontSize = 1
+\clef percussion 
+\stemUp
+
+\time 4/4
 \repeat volta 4 {
 
-	\tuplet 5/4 {d16^> d16   d16   d16^> d16   }\tuplet 5/4 {d16^> d16^> d16   d16   d16^> }\tuplet 5/4 {d16   d16^> d16^> d16   d16   }
-	\tuplet 5/4 {d16^> d16   d16^> d16^> d16   }\tuplet 5/4 {d16   d16^> d16   d16^> d16^> }\tuplet 5/4 {d16   d16   d16^> d16   d16^> }
-	\tuplet 5/4 {d16^> d16   d16   d16^> d16   }\tuplet 5/4 {d16^> d16^> d16   d16   d16^> }\tuplet 5/4 {d16   d16^> d16^> d16   d16   }
-	\tuplet 5/4 {d16^> d16   d16^> d16^> d16   }\tuplet 5/4 {d16   d16^> d16   d16^> d16^> }\tuplet 5/4 {d16   d16   d16^> d16   d16^> }
-	\tuplet 5/4 {d16^> d16   d16   d16^> d16   }\tuplet 5/4 {d16^> d16^> d16   d16   d16^> }\tuplet 5/4 {d16   d16^> d16^> d16   d16   }
-	\tuplet 5/4 {d16^> d16   d16^> d16^> d16   }\tuplet 5/4 {d16   d16^> d16   d16^> d16^> }\tuplet 5/4 {d16   d16   d16^> d16   d16^> }
-	\tuplet 5/4 {d16^> d16   d16   d16^> d16   }\tuplet 5/4 {d16^> d16^> d16   d16   d16^> }\tuplet 5/4 {d16   d16^> d16^> d16   d16   }
-	\tuplet 5/4 {d16^> d16   d16^> d16^> d16   }\tuplet 5/4 {d16   d16^> d16   d16^> d16^> }\tuplet 5/4 {d16   d16   d16^> d16   d16^> }
+	\tuplet 3/2 {d8^> d8   d8^> } \tuplet 3/2 {d8   d8   d8^> } \tuplet 3/2 {d8   d8^> d8   } \tuplet 3/2 {d8   d8^> d8   } 
+	\tuplet 3/2 {d8^> d8   d8   } \tuplet 3/2 {d8^> d8   d8^> } \tuplet 3/2 {d8   d8   d8^> } \tuplet 3/2 {d8   d8^> d8   } 
+	\tuplet 3/2 {d8   d8^> d8   } \tuplet 3/2 {d8^> d8   d8   } \tuplet 3/2 {d8^> d8   d8^> } \tuplet 3/2 {d8   d8   d8^> } 
+	\tuplet 3/2 {d8   d8^> d8   } \tuplet 3/2 {d8   d8^> d8   } \tuplet 3/2 {d8^> d8   d8   } \tuplet 3/2 {d8^> d8   d8^> } 
+	\tuplet 3/2 {d8   d8   d8^> } \tuplet 3/2 {d8   d8^> d8   } \tuplet 3/2 {d8   d8^> d8   } \tuplet 3/2 {d8^> d8   d8   } 
+	\tuplet 3/2 {d8^> d8   d8^> } \tuplet 3/2 {d8   d8   d8^> } \tuplet 3/2 {d8   d8^> d8   } \tuplet 3/2 {d8   d8^> d8   } 
+	\tuplet 3/2 {d8^> d8   d8   } \tuplet 3/2 {d8^> d8   d8^> } \tuplet 3/2 {d8   d8   d8^> } \tuplet 3/2 {d8   d8^> d8   } 
+	\tuplet 3/2 {d8   d8^> d8   } \tuplet 3/2 {d8^> d8   d8   } \tuplet 3/2 {d8^> d8   d8^> } \tuplet 3/2 {d8   d8   d8^> } 
 
   }
 }
 
- \relative c'{
-    \set fontSize = 1
-    \clef percussion 
-    \stemUp
-    
-\time 3/4
+\markup {
+    No filling
+}
+
+\relative c'{
+\set fontSize = 1
+\clef percussion 
+\stemUp
+
+\time 4/4
 \repeat volta 4 {
 
-	\tuplet 5/4 {d16^> d16   d16   d16^> d16   }\tuplet 5/4 {d16^> d16^> d16   d16   d16^> }\tuplet 5/4 {d16   d16^> d16^> d16   d16   }
-	\tuplet 5/4 {d16^> d16   d16^> d16^> d16   }\tuplet 5/4 {d16   d16^> d16   d16^> d16^> }\tuplet 5/4 {d16   d16   d16^> d16   d16^> }
-	\tuplet 5/4 {d16^> d16   d16   d16^> d16   }\tuplet 5/4 {d16^> d16^> d16   d16   d16^> }\tuplet 5/4 {d16   d16^> d16^> d16   d16   }
-	\tuplet 5/4 {d16^> d16   d16^> d16^> d16   }\tuplet 5/4 {d16   d16^> d16   d16^> d16^> }\tuplet 5/4 {d16   d16   d16^> d16   d16^> }
-	\tuplet 5/4 {d16^> d16   d16   d16^> d16   }\tuplet 5/4 {d16^> d16^> d16   d16   d16^> }\tuplet 5/4 {d16   d16^> d16^> d16   d16   }
-	\tuplet 5/4 {d16^> d16   d16^> d16^> d16   }\tuplet 5/4 {d16   d16^> d16   d16^> d16^> }\tuplet 5/4 {d16   d16   d16^> d16   d16^> }
-	\tuplet 5/4 {d16^> d16   d16   d16^> d16   }\tuplet 5/4 {d16^> d16^> d16   d16   d16^> }\tuplet 5/4 {d16   d16^> d16^> d16   d16   }
-	\tuplet 5/4 {d16^> d16   d16^> d16^> d16   }\tuplet 5/4 {d16   d16^> d16   d16^> d16^> }\tuplet 5/4 {d16   d16   d16^> d16   d16^> }
+	\tuplet 3/2 {d4 d8 } \tuplet 3/2 {r4 d8 } \tuplet 3/2 {r8 d8 r8 } \tuplet 3/2 {r8 d8 r8 } 
+	d4 \tuplet 3/2 {d4 d8 } \tuplet 3/2 {r4 d8 } \tuplet 3/2 {r8 d8 r8 } 
+	\tuplet 3/2 {r8 d8 r8 } d4 \tuplet 3/2 {d4 d8 } \tuplet 3/2 {r4 d8 } 
+	\tuplet 3/2 {r8 d8 r8 } \tuplet 3/2 {r8 d8 r8 } d4 \tuplet 3/2 {d4 d8 } 
+	\tuplet 3/2 {r4 d8 } \tuplet 3/2 {r8 d8 r8 } \tuplet 3/2 {r8 d8 r8 } d4 
+	\tuplet 3/2 {d4 d8 } \tuplet 3/2 {r4 d8 } \tuplet 3/2 {r8 d8 r8 } \tuplet 3/2 {r8 d8 r8 } 
+	d4 \tuplet 3/2 {d4 d8 } \tuplet 3/2 {r4 d8 } \tuplet 3/2 {r8 d8 r8 } 
+	\tuplet 3/2 {r8 d8 r8 } d4 \tuplet 3/2 {d4 d8 } \tuplet 3/2 {r4 d8 } 
 
   }
 }

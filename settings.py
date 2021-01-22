@@ -1,14 +1,60 @@
 bars_in_etude = 8 # количество тактов
-beats_in_bar = 3 # размер 3/4/5 четвертей
-pulsation = 5 # 3/4/5/6/7  значит триоли/16е/квинтоли/секстоли/септоли
-notes_grouped_by = '100101' # группы из 2/3/4/5/6/7 нот
+beats_in_bar = 4 # размер 3/4/5 четвертей
+pulsation = 3 # 3/4/5/6/7  значит триоли/16е/квинтоли/секстоли/септоли
+notes_grouped_by = '10100' # группы из 2/3/4/5/6/7 нот
 offset = 0 # сместить на offset нот вперед
-fill = 'notes' # 'restst' - ноты с паузами 'notes' - акцентированые
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+################################################################
+#                   ЭТО УЖЕ НЕ НАСТРОЙКИ
+################################################################
 
 piece = [[[0 for note in range(pulsation)] for beat in range(beats_in_bar)] for bar in range(bars_in_etude)]
-
-
 counter = 0 + offset
 
 for counter_bar, bar in enumerate(piece):
@@ -19,10 +65,7 @@ for counter_bar, bar in enumerate(piece):
             counter += 1
             if counter == len(notes_grouped_by):
                 counter = 0
-
-################################################################
-#                   ЭТО УЖЕ НЕ НАСТРОЙКИ
-################################################################
+                
 pulsation_for_title = {
     '3': 'Triplets',
     '4': 'Sixteens',
