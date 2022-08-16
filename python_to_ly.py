@@ -9,7 +9,6 @@ header = """
 \\header{{
     title = "{0}"
     subtitle = "notes grouping = '{1}'"
-    subsubtitle = "offset = {2}"
     composer = "Dmitriy Denisov"  
 }}
 
@@ -17,7 +16,7 @@ header = """
     indent = #0
 }}
 
-""".format(settings.title, settings.notes_grouped_by ,settings.offset)
+""".format(settings.title, settings.notes_grouped_by)
 f.write(header)
 
 
@@ -151,3 +150,5 @@ f.write(score)
 
 
 #############################################################
+number = '13'
+print('Easy_',number,'_', settings.pulsation_for_title[str(settings.pulsation)],'_by_',settings.pulsation,'_grouped_',settings.notes_grouped_by,'_in_',settings.beats_in_bar,'4',sep='')

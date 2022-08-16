@@ -1,8 +1,11 @@
-bars_in_etude = 8 # количество тактов
 beats_in_bar = 4 # размер 3/4/5 четвертей
-pulsation = 3 # 3/4/5/6/7  значит триоли/16е/квинтоли/секстоли/септоли
-notes_grouped_by = '10100' # группы из 2/3/4/5/6/7 нот
-offset = 0 # сместить на offset нот вперед
+pulsation = 4 # 3/4/5/6/7  значит триоли/16е/квинтоли/секстоли/септоли
+notes_grouped_by = '100' # группы из 2/3/4/5/6/7 нот
+
+
+
+
+bars_in_etude = 3 # количество тактов
 
 
 
@@ -24,31 +27,7 @@ offset = 0 # сместить на offset нот вперед
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+offset = 0
 
 ################################################################
 #                   ЭТО УЖЕ НЕ НАСТРОЙКИ
@@ -69,9 +48,9 @@ for counter_bar, bar in enumerate(piece):
 pulsation_for_title = {
     '3': 'Triplets',
     '4': 'Sixteens',
-    '5': 'Quintiplets',
+    '5': 'Quintuplets',
     '6': 'Sixteen triplets',
-    '7': 'Septoles'    
+    '7': 'Septolies'    
 }
 
 title = f'{pulsation_for_title[str(pulsation)]} by {len(notes_grouped_by)} in {beats_in_bar}/4'
